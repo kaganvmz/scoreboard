@@ -970,9 +970,126 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Libs
-var PI = 3.14;
+function Application(props) {
+    return _react2.default.createElement(
+        'div',
+        { className: 'scoreboard' },
+        _react2.default.createElement(
+            'div',
+            { className: 'header' },
+            _react2.default.createElement(
+                'h1',
+                null,
+                props.title
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: 'players' },
+            _react2.default.createElement(
+                'div',
+                { className: 'player' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'player-name' },
+                    'Jim Hoskins'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'player-score' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'counter' },
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'counter-action decrement' },
+                            ' - '
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'counter-score' },
+                            ' 31 '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'counter-action increment' },
+                            ' + '
+                        )
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'player' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'player-name' },
+                    'Ben Karry'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'player-score' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'counter' },
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'counter-action decrement' },
+                            ' - '
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'counter-score' },
+                            ' 27 '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'counter-action increment' },
+                            ' + '
+                        )
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'player' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'player-name' },
+                    'Ganny Pit'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'player-score' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'counter' },
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'counter-action decrement' },
+                            ' - '
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'counter-score' },
+                            ' 42 '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'counter-action increment' },
+                            ' + '
+                        )
+                    )
+                )
+            )
+        )
+    );
+}
+Application.propTypes = {
+    title: _react2.default.PropTypes
+};
 
-console.log(PI);
+_reactDom2.default.render(_react2.default.createElement(Application, { title: 10 }), document.getElementById('app'));
 
 /***/ }),
 /* 16 */
